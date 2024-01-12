@@ -1,0 +1,963 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:grey;
+ 
+  height: 60px;
+
+
+}
+button{
+  margin-top:0px;
+  
+  background-color: grey;
+  color:goldenrod;
+  margin-right: 90px;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.phone button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-btn {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.main-menu ul li {
+  margin-right: 70px;
+
+  font-size: 15px;
+ 
+ 
+}
+
+.main-menu ul li:first-child {
+  margin-left: 0;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color:goldenrod;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: BLUE;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20PX;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* Style the moving word animation */
+.moving-word {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  color: blanchedalmond
+  ;
+}
+
+.hotel-animation {
+  animation: moveUp 2s ease-in-out infinite;
+}
+
+.hello-animation {
+  animation: moveDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Style the image slide */
+.slide {
+  display: none;
+}
+
+/* Style the height of the image slide */
+.slide {
+  height: 800px;
+}
+
+/* Style the description (optional) */
+.description {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Style the main container */
+.main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the table header */
+th {
+  height: 20px;
+  background-color: rgba(21, 2, 2, 0.847);
+}
+
+/* Style the marquee */
+marquee {
+  font-size: 40px;
+  color: blue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style the images within the table cells */
+table img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the book-section */
+.book-section {
+  margin-top: 50px;
+}
+
+/* Style the inner-book */
+.inner-book {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Style the input fields within the inner-book */
+.inner-book input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Style the award-winning-hotel section */
+.award-winning-hotel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Style the inner-award */
+.inner-award {
+  width: 200px;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: px;
+}
+
+/* Style the images within the inner-award */
+.inner-award img {
+  width: 120px;
+}
+
+/* Style the h6 and p tags within the inner-award */
+.inner-award h6, .inner-award p {
+  margin: 5px 0;
+}
+/* Style the paragraph */
+
+/* Style the designed by text */
+p[align="right"] {
+  font-size: 24px;
+  color: blue;
+}
+
+footer {
+  background-color:#333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+.social a {
+  display: block;
+  margin: 5px 0;
+  color:white;
+  text-decoration: none;
+}
+
+#about-section ul,
+#booking-section ul,
+#contact-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5;
+}
+
+#about-section ul li,
+#booking-section ul li {
+  margin: 5px 0;
+}
+
+#about-section ul li a,
+#booking-section ul li a,
+#contact-section ul li a {
+  color:white;
+  text-decoration: none;
+  display: block;
+}
+body{
+  background-color: black;
+}
+
+
+/*about page*/
+
+
+#about .content-col {
+  background: #222222;
+  padding: 30px
+}
+
+#about .img-col {
+  overflow: hidden;
+}
+
+#about .img-col img {
+  transition: 0.3s;
+  width: 100px;
+  height: 100px;
+}
+
+#about .img-col:hover img {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#about .content-col h3 {
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px) {
+  #about .content-col {
+      text-align: center;
+  }
+
+  #about .content-col h3 {
+      font-weight: 400;
+      margin-top: 15px;
+  }
+}
+
+#about .content-col p {
+  color: blue;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#about .content-col a {
+  display: inline-block;
+  background: #FFD700;
+  font-weight: 400;
+  color: #222222;
+  padding: 10px 30px;
+}
+
+#about .content-col a:hover {
+  background: #ffffff;
+  color: #FFD700;
+}
+
+#about .content-col a:focus {
+  color: #fff;
+}
+/* end of about page*/
+/*services page*/
+
+#amenities {
+  position: relative;
+margin-bottom: 200px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#amenities.home-amenities {
+  max-height: 100%;
+  background-image: url(amenities-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#amenities.home-amenities:after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#amenities .container {
+  position: relative;
+  z-index: 1;
+}
+
+#amenities.home-amenities h2,
+#amenities.home-amenities h3,
+#amenities.home-amenities p {
+  color: #ffffff;
+}
+
+#amenities h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#amenities .icons {
+  margin-bottom: 30px;
+}
+
+#amenities.row{
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+#amenities .icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s;
+
+}
+  #amenities .icon.icon-1 {
+    background-image: url(shield-hover.png);
+}
+
+#amenities .icon.icon-1:hover {
+    background-image: url(icon/shield.png);
+}
+
+#amenities .icon.icon-2 {
+    background-image: url(air-conditioner-hover.png);
+}
+
+#amenities .icon.icon-2:hover {
+    background-image: url(air-conditioner.png);
+}
+
+#amenities .icon.icon-3 {
+  background-image: url(bathtub-hover.png);
+}
+
+#amenities .icon.icon-3:hover {
+  background-image: url(bathtub.png);
+}
+
+#amenities .icon.icon-4 {
+  background-image: url(shower-hover.png);
+}
+
+#amenities .icon.icon-4:hover {
+  background-image: url(shower.png);
+}
+
+#amenities .icon.icon-5 {
+  background-image: url(towel-hover.png);
+}
+
+#amenities .icon.icon-5:hover {
+  background-image: url(towel.png);
+}
+
+#amenities .icon.icon-6 {
+  background-image: url(television-hover.png);
+}
+
+#amenities .icon.icon-6:hover {
+  background-image: url(television.png);
+}
+
+#amenities .icon.icon-7 {
+  background-image: url(wifi-hover.png);
+}
+
+#amenities .icon.icon-7:hover {
+  background-image: url(wifi.png);
+}
+
+#amenities .icon.icon-8 {
+  background-image: url(call-hover.png);
+}
+
+#amenities .icon.icon-8:hover {
+  background-image: url(call.png);
+}
+
+#amenities .icon.icon-9 {
+  background-image: url(minibar-hover.png);
+}
+
+#amenities .icon.icon-9:hover {
+  background-image: url(minibar.png);
+}
+
+#amenities .icon.icon-10 {
+  background-image: url(kitchen-hover.png);
+}
+
+#amenities .icon.icon-10:hover {
+  background-image: url(kitchen.png);
+
+
+}
+
+
+/* Apply styles to the section header */
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+  height: 5PX;
+}
+
+/* Style for the heading */
+.section-header h2 {
+  font-size: 36px;
+  color:blue; /* You can choose your preferred color */
+  margin-bottom: 10px;
+}
+
+/* Style for the paragraph */
+.section-header p {
+  font-size: 18px;
+  color:blue; /* You can choose your preferred color */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.srch
+{ 
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border-style: inset;
+    border-radius: 100%;
+    float: left;
+
+}
+
+ 
+#amenities.main p {
+  line-height: 23px;
+  width: 650px;
+  font-size: 17px;
+background-color: antiquewhite;
+  padding: 20px;
+}
+
+
+
+#amenities .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #amenities .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  #amenities .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #amenities .icons i {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  #amenities .icons h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .service-images{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+/* ================================================= */
+
+
+/*room section*/
+#search {
+  position: relative;
+  background: black;
+  padding: 30px 0 20px 0;
+  display: flex;
+  flex-wrap: nowrap; /* Update this line to prevent wrapping */
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  #search {
+    padding: 30px 0 35px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #search {
+    padding: 30px 0 35px 0;
+  }
+
+  #search .kid {
+    margin-top: 15px;
+  }
+}
+
+#search label {
+  font-size: 14px;
+  font-weight: 600px;
+}
+
+#search .input-group-text {
+  border-radius: 0;
+  width: 12px;
+}
+
+#search input,
+#search select,
+#search button {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#search input:focus,
+#search select:focus,
+#search button:focus {
+  border-color: #FFD700;
+}
+
+#search .btn {
+  margin-top: 31px;
+  color: #FFD700;
+  background: #222222;
+  border-color: #222222;
+}
+
+#search .btn:hover {
+  color: #222222;
+  background: #FFD700;
+  border-color: #FFD700;
+}
+
+#search .dropdown-menu {
+  width: 230px;
+}
+
+@media (max-width: 767.98px) {
+  #search .btn {
+    margin-top: 15px;
+  }
+
+  #search .kid {
+    margin-top: 15px;
+  }
+}
+
+#search .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#search .form-row {
+  width: 100%;
+  display: flex; /* Add this line to display form elements in a row */
+  flex-wrap: nowrap; /* Add this line to prevent wrapping of form elements */
+}
+
+#search .control-group {
+  flex: 1; /* Add this line to distribute the width evenly among form elements */
+  margin-right: 15px; /* Add this line to create spacing between form elements */
+}
+
+#search .form-group {
+  position: relative;
+}
+
+#search .input-group {
+
+  width: 100px;
+}
+
+#search .datetimepicker-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 35px 0 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #bbb;
+  color: yellow;
+}
+
+#search .input-group-text {
+  background-color: #ffffff;
+  border: none;
+}
+
+#search .input-group-append {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#search .input-group-text i {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+#search .custom-select {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+#search .btn-primary {
+  margin-top: 20px;
+  color: #FFD700;
+  background: #222222;
+  border-color: #222222;
+  width: 100%;
+  height: 40px;
+  border-color: #FFD700;
+}
+
+#search .btn-primary:hover {
+  color: #222222;
+  background: #FFD700;
+  border-color: red;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-3,
+  .col-md-6,
+  .col-md-9 {
+    flex: 1;
+  }
+}
+
+
+#rooms .room-icon {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+#rooms .room-icon li {
+  list-style-type: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s;
+}
+
+@media (max-width: 575.98px) {   
+  #rooms .room-icon li {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+}
+
+#rooms .room-icon li.icon-1 {
+  background-image: url(shield.png);
+}
+
+#rooms .room-icon li.icon-1:hover {
+  background-image: url(shield-hover.png);
+}
+
+#rooms .room-icon li.icon-2 {
+  background-image: url(air-conditioner.png);
+}
+
+#rooms .room-icon li.icon-2:hover {
+  background-image: url(air-conditioner-hover.png);
+}
+
+#rooms .room-icon li.icon-3 {
+  background-image: url(bathtub.png);
+}
+
+#rooms .room-icon li.icon-3:hover {
+  background-image: url(bathtub-hover.png);
+}
+
+#rooms .room-icon li.icon-4 {
+  background-image: url(shower.png);
+}
+
+#rooms .room-icon li.icon-4:hover {
+  background-image: url(shower-hover.png);
+}
+
+#rooms .room-icon li.icon-5 {
+  background-image: url(towel.png);
+}
+
+#rooms .room-icon li.icon-5:hover {
+  background-image: url(towel-hover.png);
+}
+
+#rooms .room-icon li.icon-6 {
+  background-image: url(television.png);
+}
+
+#rooms .room-icon li.icon-6:hover {
+  background-image: url(television-hover.png);
+}
+
+#rooms .room-icon li.icon-7 {
+  background-image: url(wifi.png);
+}
+
+#rooms .room-icon li.icon-7:hover {
+  background-image: url(wifi-hover.png);
+}
+
+#rooms .room-icon li.icon-8 {
+  background-image: url(call.png);
+}
+
+#rooms .room-icon li.icon-8:hover {
+  background-image: url(call-hover.png);
+}
+
+#rooms .room-icon li.icon-9 {
+  background-image: url(minibar.png);
+}
+
+#rooms .room-icon li.icon-9:hover {
+  background-image: url(minibar-hover.png);
+}
+
+#rooms .room-icon li.icon-10 {
+  background-image: url(kitchen.png);
+}
+
+#rooms .room-icon li.icon-10:hover {
+  background-image: url(kitchen-hover.png);
+}
+
+#rooms .room-rate h1 {
+  color: #FFD700;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 15px 0;
+  background: #353535;
+}
+
+#rooms .room-rate a {
+  display: block;
+  padding: 7px 30px;
+  color: #FFD700;
+  background: #222222;
+}
+
+#rooms .room-rate a:hover {
+  color: #222222;
+  background: #FFD700;
+}
+#rooms .room-rate {
+  text-align: center;
+}
+
+#rooms .room-rate h3 {
+  color: #FFD700;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 0;
+  background: #222222;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#rooms .room-img {
+  overflow: hidden;
+}
+
+#rooms .room-img img {
+  transition: 0.3s;
+  width: 300px;
+  height: 200px;
+}
+
+#rooms .room-img:hover img {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+#rooms .room-img,
+#rooms .room-des,
+#rooms .room-rate {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#amenities {
+  padding: 0px 0; /* Adjust the padding as needed */
+  background-color: black; /* Set the background color as needed */
+}
+
+.container {
+  text-align: center;
+  margin-top: ;
+}
+
+.section-header {
+  margin-bottom: 90px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: white; /* You can choose your preferred color */
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color:white; /* You can choose your preferred color */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.icons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icons i {
+  font-size: 36px;
+  color: #333; /* You can choose your preferred color */
+}
+
+.icons h3 {
+  font-size: 20px;
+  color: yellowgreen; /* You can choose your preferred color */
+  margin-top: 15px;
+}
